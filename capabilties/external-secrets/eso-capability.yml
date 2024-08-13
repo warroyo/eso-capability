@@ -1,0 +1,15 @@
+apiVersion: capability.tanzu.vmware.com/v1alpha1
+kind: Capability
+metadata:
+  name: external-secrets
+spec:
+  description: 'Provides the Secret store and external secrets apis for use in spaces'
+  displayName: External Secrets
+  groupVersionKinds:
+  - apiVersion: external-secrets.io/v1beta1
+    kind: ExternalSecret
+  - apiVersion: external-secrets.io/v1beta1
+    kind: SecretStore
+  tags:
+  - Secrets Management
+  vendor: external secrets
