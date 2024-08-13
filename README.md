@@ -53,7 +53,7 @@ tanzu tmc continuousdelivery enable -g your-cg -s clustergroup
 
 ```bash
 
- ytt -f tpk8s-resources/gitrepo.yml -v cg=your-cg -v gitrepo=https://github.com/warroyo/eso-capabiltiy | tanzu tmc continuousdelivery gitrepository create -s clustergroup -f-
+ ytt -f tpk8s-resources/gitrepo.yml -v cg=your-cg -v gitrepo=https://github.com/warroyo/eso-capability | tanzu tmc continuousdelivery gitrepository create -s clustergroup -f-
 ```
 
 
@@ -66,4 +66,3 @@ tanzu tmc continuousdelivery enable -g your-cg -s clustergroup
 
  Now you should see the ESO controller installed and a capabiltiy show up for it when creating a profile.
 
- 

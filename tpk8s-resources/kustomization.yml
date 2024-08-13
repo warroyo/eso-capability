@@ -1,14 +1,14 @@
 #@ load("@ytt:data", "data")
 fullName:
   clusterGroupName: #@ data.values.cg
-  name: capabilties
+  name: capabilities
 spec:
   atomicSpec:
     interval: 300s
     path: capabilities
     prune: true
     source:
-      name: capabilties
+      name: capabilities
       namespace: tanzu-continuousdelivery-resources
 type:
   kind: Kustomization

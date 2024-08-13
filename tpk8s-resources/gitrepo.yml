@@ -1,7 +1,7 @@
 #@ load("@ytt:data", "data")
 fullName:
   clusterGroupName: #@ data.values.cg
-  name: capabilties
+  name: capabilities
 spec:
   atomicSpec:
     interval: 300s
